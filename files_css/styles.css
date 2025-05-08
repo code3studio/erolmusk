@@ -1,0 +1,95 @@
+﻿@import url("../css2");
+
+@font-face
+{
+  font-family: 'Comic Sans MS';
+  src: url("../fonts/ComicSansMS.eot");
+  src: url("../fonts/ComicSansMS-1.eot") format("embedded-opentype"), url("../fonts/ComicSansMS.woff2") format("woff2"), url("../fonts/ComicSansMS.woff") format("woff"), url("../fonts/ComicSansMS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face
+{
+    font-family: LeagueSpartan;
+    src: url("../fonts/LeagueSpartan-Bold.otf");
+}
+
+body
+{
+   /*  background-color: #200217; */ /* Arkaplan rengi */
+    background: linear-gradient(184deg, #24071d 0%, #240119 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Sayfa yüksekliği kadar */
+}
+body::-webkit-scrollbar
+{
+    width: 5px;
+}
+body::-webkit-scrollbar-thumb
+{
+    background: #000000;
+    outline: #000000 solid 1px;
+}
+.content
+{
+    margin-bottom: 50px;
+    z-index: 2;
+}
+.page_logo
+{
+    max-width: 90%;
+    width: 900px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.page_logo img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+.page_logo_gif
+{
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+.page_logo_gif img
+{
+    max-width: 100%;
+}
+.bg_img
+{
+    position: fixed; /* Sabit konumlandırma */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ekran genişliğinin %100'ü */
+    height: 100vh; /* Ekran yüksekliğinin %100'ü */
+    background-image: url(../img/presale_bg.jpg); /* Görselin yolu */
+    background-size: cover; /* Görseli ekranı kaplayacak şekilde ölçeklendirir */
+    background-position: bottom -100px right 0; /* Görselin alt kısmını ekrana hizalar */
+    background-repeat: no-repeat; /* Görselin tekrarını engeller */
+    z-index: -1; /* Arka plana yerleştirir */
+    
+}
+@media (max-width: 768px)
+{
+
+    .bg_img
+    {
+        background-position: bottom right 0;
+    }
+
+}

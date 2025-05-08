@@ -1,0 +1,102 @@
+.login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+.login .container
+{
+    width: 700px;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+    padding: 30px;
+    border-radius: 12px;
+    
+    font-size: 14px;
+}
+.login .mb-3
+{
+    margin-top: 30px;
+}
+.login .form-label
+{
+    font-size: 18px;
+}
+.login .col-md-8
+{
+    width: 100%;
+}
+h2
+{
+    text-align: center;
+    color: #fff;
+}
+.form-control
+{
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+.form-control:focus
+{
+    outline: none;
+    border: 2px solid #ffcc00;
+}
+.btn-primary
+{
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+}
+.btn-primary:hover
+{
+    background-color: #e6b800;
+}
+.custom-radio-label, .custom-checkbox-label
+{
+    font-weight: 500;
+    margin-right: 15px;
+    color: #fff;
+}
+/* .form-check-input
+{
+    accent-color: #ffcc00;
+} */
+.login .form-check-input
+{
+    background-image: unset;
+} 
+.login .form-check-input:checked
+{
+    background-color: #4b0f29; 
+    border-color: #fff;
+    box-shadow: unset;
+}
+.login .form-check-input:checked::before
+{
+    background-color: transparent;
+}
+.login .form-control
+{
+
+    background-color: #410c23;
+    border: 1px solid #4a122a;
+    box-shadow: unset;
+    color: white;
+}
+.login .form-control::placeholder
+{
+    color: #747474;
+}

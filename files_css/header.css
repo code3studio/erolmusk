@@ -1,0 +1,143 @@
+.navbar
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* background-image: url(../img/top-bar.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain; */
+}
+.navbar-brand
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: unset;
+}
+.btn-apply
+{
+    background-color: #ffc107;
+    color: black;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: bold;
+    margin: unset !important;
+    transition: background-color 0.3s ease;
+}
+
+.btn-apply:hover {
+    background-color: #e0a800;
+    color: black;
+} 
+#navbarNavResponsive
+{
+    width: 100%;
+    display: none !important;
+    /* display: flex !important;
+    flex-direction: column;
+    position: relative; */
+}
+#navbarNavResponsive .btn-apply
+{
+    width: 30%;
+    margin: auto !important;
+}
+#navbarNavResponsive .navbar-nav
+{
+    position: absolute;
+    bottom: -15px;
+
+}
+@media (max-width: 1000px)
+{
+
+    .navbar
+    {
+        display: unset !important;
+        flex-wrap: unset !important;
+    }
+    .navbar .container
+    {
+        all: unset ;
+        width: 90% !important;
+        margin: auto !important;
+    }
+    #navbarNav
+    {
+        display: none !important;
+    }
+    #navbarNavResponsive
+    {
+        display: flex !important;
+    }
+
+    #navbarNavResponsive .navbar-nav
+    {
+        gap: 20px;
+        flex-direction: unset !important;
+        margin: auto !important;
+    }
+
+}
+@media (max-width: 760px)
+{
+    .navbar
+    {
+        font-size: 1rem;
+    }
+    #navbarNavResponsive .navbar-nav
+    {
+        bottom: -20px;
+    }
+}
+@media (max-width: 600px)
+{
+    .navbar
+    {
+        font-size: 1rem;
+    }
+    #navbarNavResponsive .navbar-nav
+    {
+        gap: 10px;
+    }
+    #navbarNavResponsive .btn-apply
+    {
+        font-size: 0.9rem;
+    }
+    #navbarNavResponsive .btn-apply
+    {
+        width: 50%;
+        margin: auto !important;
+    }
+
+}
+@media (max-width: 480px)
+{
+    .navbar
+    {
+        font-size: 0.7rem;
+        
+    }
+    #navbarNavResponsive .navbar-nav
+    {
+        gap: 10px;
+    }
+    #navbarNavResponsive .btn-apply
+    {
+        font-size: 0.6rem;
+    }
+}
+@media (max-width: 380px)
+{
+    .navbar
+    {
+        font-size: 0.6rem;
+    }
+    #navbarNavResponsive .navbar-nav
+    {
+        gap: 10px;
+    }
+    #navbarNavResponsive .btn-apply
+    {
+        font-size: 0.5rem;
+    }
+}
